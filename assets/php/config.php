@@ -1,6 +1,6 @@
 <?php
 //Set base values
-$home_directory = 'http://localhost/1er/'; //Folder or domain
+$home_directory = 'http://localhost/helmholtz/'; //Folder or domain
 $base_page_title = ' - 1erTuning.de';
 $conf_after_logout = $home_directory;
 
