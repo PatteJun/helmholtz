@@ -313,7 +313,7 @@ require_once('tpl_menu.php');
 										<a href="#">83 <i class="fa fa-thumbs-up"></i></a>
 										<a href="#">Teil markieren <i class="fa fa-tag"></i></a>
 										<a href="#">0 <i class="fa fa-tags"></i></a>
-										<span class="display-comments">53 <i class="fa fa-comments"></i></span>
+										<span class="display-comments disqus-comment-count" data-disqus-identifier="auto">53 <i class="fa fa-comments"></i></span>
 									</span>
 								</div>
 								<div style="clear: both;"></div>
@@ -365,6 +365,19 @@ require_once('tpl_javascript.php');
             $('.disqus-area').height($('.col-xs-8').height());
 
         });
+    </script>
+
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = '1ertuning'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
     </script>
 
     <!-- END JavaScript -->
