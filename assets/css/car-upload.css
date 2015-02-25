@@ -1,0 +1,16 @@
+body{
+    padding: 0px;
+    background-color: #ebeced;
+}
+.panel-footer{
+    text-align: right;
+}
+.input-group-addon {
+    color: #ffffff;
+    border: 1px solid #4863a0;
+}
+@media (max-width: 979px) {
+    h1 {
+        font-size: 23px;
+    }
+}

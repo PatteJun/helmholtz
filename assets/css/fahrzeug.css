@@ -1,0 +1,67 @@
+body{
+    padding: 0px;
+    background-color: #ebeced;
+}
+.thumbnail{
+    margin-bottom: 0px;
+}
+.panel-footer a{
+    text-decoration: none;
+    color: #A9A9A9;
+}
+.panel-footer a:hover{
+    color: #575757;
+}
+.panel-heading{
+    padding-left: 8px;
+}
+a.thumbnail{
+    margin-bottom: 0px;
+    padding-bottom: 4px;
+}
+a.thumbnail:hover, a.thumbnail:focus{
+    border-color: #4863a0;
+}
+.media-heading{
+    font-size: 1.3em;
+    text-decoration: none;
+    color: #4863a0;
+}
+.media-heading:hover{
+    text-decoration: none;
+    color: #4863a0;
+}
+.list-group-item > .nobadge {
+    float: right;
+}
+.gallery{
+    padding: 3px;
+}
+.gallery-item{
+    padding: 2px;
+}
+.no-scroll{
+    overflow: hidden;
+}
+@media screen and (min-width: 768px){
+    .blueimp-gallery .modal-dialog{
+        max-width: 100%;
+    }
+}
+.car-display .modal-content{
+    background-color: #000000;
+    border-radius: 0px 0px 6px 6px;
+}
+.car-display .modal-footer{
+    border-top: 1px solid #2d2f31;
+    padding: 5px;
+}
+.no-margin{
+    margin: 0px;
+}
+.no-padding{
+    padding: 0px;
+}
+.disqus-area {
+    background: #ebebeb;
+}

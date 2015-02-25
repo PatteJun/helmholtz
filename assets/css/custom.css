@@ -1,0 +1,104 @@
+body{
+    padding: 0px;
+    background-color: #ebeced;
+}
+.navbar-link{
+    line-height: 28px;
+    margin: 0px 3px;
+}
+.navbar-link:hover{
+    color: #4863a0 !important;
+    text-decoration: none;
+}
+@media (max-width: 979px) {
+    .showroom{
+        padding: 0px 15px !important;
+    }
+    .container-showroom{
+        padding: 0px;
+    }
+}
+.player{
+    border: 1px solid #4863a0;
+    border-radius: 8px;
+    padding: 0px 10px;
+}
+#Container .mix{
+    display: none;
+}
+.carcard{
+    box-shadow: 0px 8px 15px -5px rgba(90,90,90,1);
+    -webkit-box-shadow: 0px 8px 15px -5px rgba(90,90,90,1);
+    -moz-box-shadow: 0px 8px 15px -5px rgba(90,90,90,1);
+}
+.thumbnail{
+    padding-bottom: 0px;
+}
+.thumbnail > .caption{
+    padding: 0px;
+}
+.userlink{
+    font-size: 1.1em;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+    color: #4863a0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+.userlink:hover{
+    text-decoration: none;
+    color: #4863a0;
+}
+.valign{
+    margin-bottom: 8px;
+}
+.valign div{
+    color: #B6B6B4;
+    text-align: center;
+    font-size: 1em;
+}
+.valign div:nth-child(1){
+    border-right: 1px solid #B6B6B4;
+}
+.input-group-addon {
+    color: #ffffff;
+    border: 1px solid #4863a0;
+    background-color: #4863a0;
+}
+.fileinput-new.thumbnail,
+.fileinput-preview.fileinput-exists.thumbnail {
+    padding-bottom: 4px;
+}
+.hotspot {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    z-index: 100;
+    position: absolute;
+    cursor: pointer;
+}
+#hotspotting {
+    cursor: crosshair;
+    position: relative;
+    display: inline-block;
+}
+.img-align {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#disqus_thread {
+    background-color: #ebeced;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0px;
+    overflow: auto;
+    padding: 1em;
+    z-index: 2000;
+}

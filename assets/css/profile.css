@@ -1,0 +1,107 @@
+body{
+    padding: 0px;
+    background-color: #ebeced;
+}
+.valign div{
+    color: #4863a0;
+    text-align: left;
+    font-size: 1em;
+}
+.valign div:nth-child(1){
+    border-right: 0px solid #B6B6B4;
+}
+.user-panel{
+    padding-bottom: 11em;
+    background-image: url('../img/background.jpg');
+    background-position: center 70%;
+    background-size: cover;
+}
+.img-user{
+    position: absolute;
+    border: 2px solid #4863a0;
+    padding: 5px;
+    background-color: white;
+    height: 7.5em;
+    top: 30%;
+    left: 6%;
+}
+.about{
+    margin-left: 130px;
+}
+@media (max-width: 979px) {
+    .img-user{
+        height: 6.5em;
+        top: 35%;
+    }
+    .about{
+        margin-left:110px;
+    }
+    h1{
+        font-size: 23px;
+    }
+
+}
+@media (max-width: 600px) {
+    .img-user{
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right:0;
+        top: 100px;
+    }
+    .about{
+        margin: 25px 0px 0px 0px;
+        text-align: center;
+    }
+}
+.panel-body{
+    cursor: default;
+}
+.text-infinite{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.text-profile{
+    margin-bottom: 2px;
+}
+.activity-item{
+    font-size: 2em;
+}
+.text-activity{
+    margin: 0px;
+}
+.activity-date{
+    display: block;
+    margin: 0px;
+    color: #737373;
+}
+.activity-icon{
+    width: 55px;
+    text-align: center !important;
+}
+.activity-responsive{
+    width: 100%;
+    border-right: 1px solid #4863a0;
+    overflow-y: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    -webkit-overflow-scrolling: touch;
+}
+.load-more{
+    padding: 8px 0px;
+    color: #999999 !important;
+}
+.profile-footer{
+    padding: 5px 10px;
+}
+.social-link{
+    color: #999999;
+    font-size: 1.3em;
+}
+.social-link:hover{
+    color: #4863a0;
+    text-decoration: none;
+}
+.user-buttons{
+    margin-bottom: 1em;
+}
