@@ -17,11 +17,7 @@ require_once('tpl_menu.php');
     <div class="container">
         <div class="row">
             <div class="col-md-9">
-<<<<<<< HEAD
-                <!-- Bilder Thumbns -->
-=======
-                <!-- Bilder Dhumbnails -->
->>>>>>> origin/master
+                <!-- Bilder Thumbnails -->
                 <div class="panel panel-1er">
                     <div class="panel-heading">
                         <h3 class="panel-title">
