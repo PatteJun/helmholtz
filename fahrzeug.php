@@ -313,9 +313,7 @@ require_once('tpl_menu.php');
 										<a href="#">83 <i class="fa fa-thumbs-up"></i></a>
 										<a href="#">Teil markieren <i class="fa fa-tag"></i></a>
 										<a href="#">0 <i class="fa fa-tags"></i></a>
-										<span class="display-comments">
-                                            <span class="disqus-comment-count" data-disqus-identifier="auto">0</span>
-                                            <i class="fa fa-comments"></i></span>
+										<span class="display-comments"></span>
 									</span>
 								</div>
 								<div style="clear: both;"></div>
@@ -361,8 +359,10 @@ require_once('tpl_javascript.php');
         gallery.on('slide', function(index, slide) {
 
             $('.disqus-area').empty();
+            $('.display-comments').empty();
 
             $('div[data-index='+slide+'] .disqus-area').load('template/disqus.php?disqusId='+images[slide]);
+            $('div[data-index='+slide+'] .display-comments').load('template/disqus_comment_count.php?disqusId='+images[slide]);
 
             $('.disqus-area').height($('.col-xs-8').height());
 
