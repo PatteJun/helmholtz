@@ -313,7 +313,9 @@ require_once('tpl_menu.php');
 										<a href="#">83 <i class="fa fa-thumbs-up"></i></a>
 										<a href="#">Teil markieren <i class="fa fa-tag"></i></a>
 										<a href="#">0 <i class="fa fa-tags"></i></a>
-										<span class="display-comments disqus-comment-count" data-disqus-identifier="auto">53 <i class="fa fa-comments"></i></span>
+										<span class="display-comments">
+                                            <span class="disqus-comment-count" data-disqus-identifier="auto">0</span>
+                                            <i class="fa fa-comments"></i></span>
 									</span>
 								</div>
 								<div style="clear: both;"></div>
