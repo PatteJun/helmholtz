@@ -6,7 +6,8 @@ $page_meta_desc = 'Hier die META-Description für ein Fahrzeug'; //META > Descri
 $custom_css = array(
     'http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css',
     $home_directory.'assets/css/fahrzeug.css',
-    $home_directory.'assets/css/bootstrap-image-gallery.min.css'
+    $home_directory.'assets/css/bootstrap-image-gallery.min.css',
+	$home_directory.'assets/css/caption.css'
 );
 $show_audio = false;
 
@@ -301,11 +302,23 @@ require_once('tpl_menu.php');
         <!-- The modal dialog, which will be used to wrap the lightbox content -->
         <div class="modal fade no-scroll" id="myModal">
             <div class="modal-dialog car-display">
-                <div class="modal-content" style="background-color: #ebeced;">
+                <div class="modal-content noBorder" style="background-color: #ebeced;">
                     <div class="row no-margin">
                         <div class="col-xs-8 no-padding" style="background-color: #000000;">
-
-                            <div class="modal-body next"></div>
+                            <div class="modal-body next">
+								<div class="caption">
+								<div class="alignleft">Bild 2<span>/</span>16</div>
+								<div class="alignright">
+									<span class="controls">
+										<a href="#">83 <i class="fa fa-thumbs-up"></i></a>
+										<a href="#">Teil makrieren <i class="fa fa-tag"></i></a>
+										<a href="#">0 <i class="fa fa-tags"></i></a>
+										<span class="display-comments">53 <i class="fa fa-comments"></i></span>
+									</span>
+								</div>
+								<div style="clear: both;"></div>
+							</div>
+							</div>
                         </div>
                         <div class="col-xs-4 no-padding disqus-area" style="overflow: hidden;position: relative;">
 
