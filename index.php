@@ -1,6 +1,6 @@
 <?php
 
-$helloWorld = "Hello World";
+$helloWorld = "Get the fuck out";
 
 echo($helloWorld);
 
