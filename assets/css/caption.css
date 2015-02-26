@@ -1,0 +1,46 @@
+.caption{
+		opacity: 0;
+		height: 3em;
+		line-height: 3em;
+		font-size: 1.2em;
+		color: #ebeced;
+		width: 100%;
+		background-color: #000000;
+		position: absolute;
+		bottom: 0;
+		z-index: 9999;
+	}
+	.modal-body:hover .caption{
+		opacity: 0.9;
+		transition: 0.4s;
+	}
+	.alignleft {
+		float: left;
+		padding-left: 15px;
+	}
+	.alignleft span{
+		Color: #4863a0;
+		margin: 0px 2px;
+	}
+	.alignright {
+		float: right;
+	}
+	.alignright a {
+		border: 1px solid #4863a0;
+		border-radius: 7px;
+		padding: 4px;
+		text-decoration: none;
+		color: #ebeced;
+	}
+	.display-comments{
+		border: 1px solid #4863a0;
+		border-radius: 7px;
+		padding: 5px;
+		cursor: Default;    
+	}
+	.controls{
+		padding: 10px;
+	}
+	.noBorder{
+		border: none;
+	}
