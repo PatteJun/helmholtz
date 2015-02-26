@@ -311,7 +311,7 @@ require_once('tpl_menu.php');
 								<div class="alignright">
 									<span class="controls">
 										<a href="#">83 <i class="fa fa-thumbs-up"></i></a>
-										<a href="#">Teil makrieren <i class="fa fa-tag"></i></a>
+										<a href="#">Teil markieren <i class="fa fa-tag"></i></a>
 										<a href="#">0 <i class="fa fa-tags"></i></a>
 										<span class="display-comments">53 <i class="fa fa-comments"></i></span>
 									</span>
