@@ -307,17 +307,17 @@ require_once('tpl_menu.php');
                         <div class="col-xs-8 no-padding" style="background-color: #000000;">
                             <div class="modal-body next">
 								<div class="caption">
-								<div class="alignleft">Bild 2<span>/</span>16</div>
-								<div class="alignright">
-									<span class="controls">
-										<a href="#">83 <i class="fa fa-thumbs-up"></i></a>
-										<a href="#">Teil markieren <i class="fa fa-tag"></i></a>
-										<a href="#">0 <i class="fa fa-tags"></i></a>
-										<span class="display-comments"></span>
-									</span>
+									<div class="alignleft">Bild 2<span>/</span>16</div>
+									<div class="alignright">
+										<span class="controls">
+											<a href="#">83 <i class="fa fa-thumbs-up"></i></a>
+											<a href="#">Teil markieren <i class="fa fa-tag"></i></a>
+											<a href="#">0 <i class="fa fa-tags"></i></a>
+											<span class="display-comments"></span>
+										</span>
+									</div>
+									<div style="clear: both;"></div>
 								</div>
-								<div style="clear: both;"></div>
-							</div>
 							</div>
                         </div>
                         <div class="col-xs-4 no-padding disqus-area" style="overflow: hidden;position: relative;">
