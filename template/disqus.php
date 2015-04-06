@@ -1,9 +1,3 @@
-<?php
-
-//echo($_GET['disqusId']);
-
-?>
-
 <div id="disqus_thread"></div>
 <script type="text/javascript">
 
