@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+	<title>1erTuning</title>
+	<!-- Bootstrap core CSS -->
+	<link href="assets/css/bootstrap.css" rel="stylesheet" />
+	<link href="assets/css/jasny-bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="assets/css/markier-modal-neu.css" rel="stylesheet" />
+	
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	  <script src="assets/js/html5shiv.js"></script>
+	  <script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="container">
+		<div class="btn-group-vertical">
+			<button data-toggle="modal" href="#parttagging" type="button" class="btn btn-sort">Tagging</button>
+			<button data-toggle="modal" href="#abgasanlage" type="button" class="btn btn-sort">Abgasanlage</button>
+			<button data-toggle="modal" href="#bremsanlage" type="button" class="btn btn-sort">Bremsanlage</button>
+			<button data-toggle="modal" href="#fahrwerk" type="button" class="btn btn-sort">Fahrwerk</button>
+			<button data-toggle="modal" href="#farbe" type="button" class="btn btn-sort">Farbe</button>
+			<button data-toggle="modal" href="#innenausstattung" type="button" class="btn btn-sort">Innenausstattung</button>
+			<button data-toggle="modal" href="#karosserie" type="button" class="btn btn-sort">Karosserie</button>
+			<button data-toggle="modal" href="#lichtanlage" type="button" class="btn btn-sort">Lichtanlage</button>
+			<button data-toggle="modal" href="#motor" type="button" class="btn btn-sort">Motor</button>
+			<button data-toggle="modal" href="#reifen" type="button" class="btn btn-sort">Reifen</button>
+			<button data-toggle="modal" href="#soundanlage" type="button" class="btn btn-sort">Soundanlage</button>
+			<button data-toggle="modal" href="#turbo" type="button" class="btn btn-sort">Turbo</button>
+			<button data-toggle="modal" href="#filter" type="button" class="btn btn-sort">Filter</button>
+			<button data-toggle="modal" href="#zubehoer" type="button" class="btn btn-sort">Zubehör</button>
+			<button data-toggle="modal" href="#priceskills" type="button" class="btn btn-sort">Preis & skills</button>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="parttagging" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title text-1er"><i class="fa fa-tags fa-fw"></i> Was möchtest du markieren?</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="#" class="thumbnail alert alert-info tagging-link">
+								<i class="fa fa-tag fa-fw"></i> Abgasanlage
+							</a>	
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="#" class="thumbnail alert alert-info tagging-link">
+								<i class="fa fa-tag fa-fw"></i> Bremsanlage
+							</a>	
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="#" class="thumbnail alert alert-info tagging-link">
+								<i class="fa fa-tag fa-fw"></i> Fahrwerk
+							</a>	
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="#" class="thumbnail alert alert-info tagging-link">
+								<i class="fa fa-tag fa-fw"></i> Farbe / Lackierung
+							</a>	
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="#" class="thumbnail alert alert-info tagging-link">
+								<i class="fa fa-tag fa-fw"></i> Filter
+							</a>	
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="#" class="thumbnail alert alert-info tagging-link">
+								<i class="fa fa-tag fa-fw"></i> Innenausstattung
+							</a>	
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="#" class="thumbnail alert alert-info tagging-link">
+								<i class="fa fa-tag fa-fw"></i> Karosserie
+							</a>	
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="#" class="thumbnail alert alert-info tagging-link">
+								<i class="fa fa-tag fa-fw"></i> Lichtanlage
+							</a>	
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="#" class="thumbnail alert alert-info tagging-link">
+								<i class="fa fa-tag fa-fw"></i> Motor
+							</a>	
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="#" class="thumbnail alert alert-info tagging-link">
+								<i class="fa fa-tag fa-fw"></i> Reifen / Felgen
+							</a>	
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="#" class="thumbnail alert alert-info tagging-link">
+								<i class="fa fa-tag fa-fw"></i> Soundanlage
+							</a>	
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<a href="#" class="thumbnail alert alert-info tagging-link">
+								<i class="fa fa-tag fa-fw"></i> Turbo
+							</a>	
+						</div>						
+						<div class="col-xs-12 col-sm-6 col-md-4 col-md-offset-4">
+							<a href="#" class="thumbnail alert alert-info tagging-link">
+								<i class="fa fa-tag fa-fw"></i> Zubeh&ouml;r / Sonstiges
+							</a>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="abgasanlage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title text-1er"><i class="fa fa-tags fa-fw"></i> Abgasanlage</h4>
+				</div>
+				<div class="modal-body">
+					<form role="form">
+						<div class="form-group">
+							<label for=""><i class="fa fa-tags fa-fw"></i> Was möchtest du markieren?</label>
+							<select class="form-control">
+								<option>Abgasanlage, komplett</option>
+								<option>Auspuffblende</option>
+								<option>Schalldämpfer</option>
+								<option>Sonstiges</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for=""><i class="fa fa-building-o fa-fw"></i> Hersteller</label>
+							<input type="text" class="form-control" id="" placeholder="Name des Herstellers">
+						</div>
+						<div class="form-group">
+							<label for=""><i class="fa fa-shopping-cart fa-fw"></i> Hier erhältlich</label>
+							<input type="url" class="form-control" id="" placeholder="http://www.beispielshop.de/...">
+						</div>					
+						<div class="fileinput fileinput-new" data-provides="fileinput">
+							<label><i class="fa fa-camera fa-fw"></i> Lade ein Bild hoch</label>
+							<span class="help-block">Bitte verwende ein Bild auf dem hauptsächlich der Auspuff zu sehen ist :)</span>
+							<div class="fileinput-new thumbnail">
+								<img src="assets/img/placeholder.png" alt="..." title="Dieses Teil wurde verbaut" />
+							</div>
+							<div class="fileinput-preview fileinput-exists thumbnail"></div>
+							<div>
+								<span class="btn btn-sort btn-file">
+									<span class="fileinput-new">Bild wählen</span>
+									<span class="fileinput-exists">ändern</span>
+									<input type="file" name="...">
+								</span>
+								<a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">löschen</a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">abbrechen</button>
+					<button type="button" class="btn btn-sort">speichern</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="bremsanlage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title text-1er"><i class="fa fa-tags fa-fw"></i> Bremsanlage</h4>
+				</div>
+				<div class="modal-body">
+					<form role="form">
+						<div class="form-group">
+							<label for=""><i class="fa fa-tags fa-fw"></i> Was möchtest du markieren?</label>
+							<select class="form-control">
+								<option>Bremse, komplett</option>
+								<option>Bremssättel</option>
+								<option>Bremscheiben</option>
+								<option>Bremsbeläge</option>
+								<option>Sonstiges</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for=""><i class="fa fa-building-o fa-fw"></i> Hersteller</label>
+							<input type="text" class="form-control" id="" placeholder="Name des Herstellers">
+						</div>
+						<div class="form-group">
+							<label for=""><i class="fa fa-shopping-cart fa-fw"></i> Hier erhältlich</label>
+							<input type="url" class="form-control" id="" placeholder="http://www.beispielshop.de/...">
+							<span class="help-block">Kopiere hier den Kauflink hinein.</span>
+						</div>					
+						<div class="fileinput fileinput-new" data-provides="fileinput">
+							<label><i class="fa fa-camera fa-fw"></i> Lade ein Bild hoch</label>
+							<span class="help-block">Bitte verwende ein Bild auf dem hauptsächlich deine Bremsen zu sehen sind :)</span>
+							<div class="fileinput-new thumbnail">
+								<img src="assets/img/placeholder.png" alt="..." title="Dieses Teil wurde verbaut" />
+							</div>
+							<div class="fileinput-preview fileinput-exists thumbnail"></div>
+							<div>
+								<span class="btn btn-sort btn-file">
+									<span class="fileinput-new">Bild wählen</span>
+									<span class="fileinput-exists">ändern</span>
+									<input type="file" name="...">
+								</span>
+								<a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">löschen</a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">abbrechen</button>
+					<button type="button" class="btn btn-sort">speichern</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="fahrwerk" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title text-1er"><i class="fa fa-tags fa-fw"></i> Fahrwerk</h4>
+				</div>
+				<div class="modal-body">
+					<form role="form">
+						<div class="form-group">
+							<label for=""><i class="fa fa-tags fa-fw"></i> Was möchtest du markieren?</label>
+							<select class="form-control">
+								<option>Sportfahrwerk, komplett</option>
+								<option>Stoßdämpfer</option>
+								<option>Fahrwerksfedern</option>
+								<option>Sonstiges</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for=""><i class="fa fa-building-o fa-fw"></i> Hersteller</label>
+							<input type="text" class="form-control" id="" placeholder="Name des Herstellers">
+						</div>
+						<div class="form-group">
+							<label for=""><i class="fa fa-shopping-cart fa-fw"></i> Hier erhältlich</label>
+							<input type="url" class="form-control" id="" placeholder="http://www.beispielshop.de/...">
+							<span class="help-block">Kopiere hier den Kauflink hinein.</span>
+						</div>					
+						<div class="fileinput fileinput-new" data-provides="fileinput">
+							<label><i class="fa fa-camera fa-fw"></i> Lade ein Bild hoch</label>
+							<span class="help-block">Bitte verwende ein Bild auf dem hauptsächlich das Fahrwerk oder die Tiefe deines Autos zu sehen ist :)</span>
+							<div class="fileinput-new thumbnail">
+								<img src="assets/img/placeholder.png" alt="..." title="Dieses Teil wurde verbaut" />
+							</div>
+							<div class="fileinput-preview fileinput-exists thumbnail"></div>
+							<div>
+								<span class="btn btn-sort btn-file">
+									<span class="fileinput-new">Bild wählen</span>
+									<span class="fileinput-exists">ändern</span>
+									<input type="file" name="...">
+								</span>
+								<a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">löschen</a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">abbrechen</button>
+					<button type="button" class="btn btn-sort">speichern</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="farbe" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title text-1er"><i class="fa fa-tags fa-fw"></i> Farbe und Folierung</h4>
+				</div>
+				<div class="modal-body">
+					<form role="form">
+						<div class="form-group">
+							<label for=""><i class="fa fa-tags fa-fw"></i> Was möchtest du markieren?</label>
+							<select class="form-control">
+								<option>Lackierung</option>
+								<option>Folierung</option>
+								<option>Pulverbeschichtung</option>
+								<option>Aufkleber bzw. Sticker</option>							
+								<option>Sonstiges</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for=""><i class="fa fa-tint fa-fw"></i> Art der Lackierung bzw. Folierung</label>
+							<select class="form-control">
+								<option>Normal</option>
+								<option>Metallic</option>
+								<option>Matt</option>
+								<option>Flip-Flop</option>
+								<option>Sonstiges</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for=""><i class="fa fa-adjust fa-fw"></i> Wie hei&szlig;t diese Farbe?</label>
+							<input type="text" class="form-control" id="" placeholder="Schwarz, Grau, Silber, Weiß etc...">
+						</div>
+						<div class="form-group">
+							<label for=""><i class="fa fa-building-o fa-fw"></i> Hersteller</label>
+							<input type="text" class="form-control" id="" placeholder="Name des Herstellers">
+						</div>
+						<div class="form-group">
+							<label for=""><i class="fa fa-shopping-cart fa-fw"></i> Hier erhältlich</label>
+							<input type="url" class="form-control" id="" placeholder="http://www.beispielshop.de/...">
+							<span class="help-block">Kopiere hier den Kauflink hinein.</span>
+						</div>					
+						<div class="fileinput fileinput-new" data-provides="fileinput">
+							<label><i class="fa fa-camera fa-fw"></i> Lade ein Bild hoch</label>
+							<span class="help-block">Bitte verwende ein Bild auf dem besonders gut die Farbe des Autos zu sehen ist :)</span>
+							<div class="fileinput-new thumbnail">
+								<img src="assets/img/placeholder.png" alt="..." title="Dieses Teil wurde verbaut" />
+							</div>
+							<div class="fileinput-preview fileinput-exists thumbnail"></div>
+							<div>
+								<span class="btn btn-sort btn-file">
+									<span class="fileinput-new">Bild wählen</span>
+									<span class="fileinput-exists">ändern</span>
+									<input type="file" name="...">
+								</span>
+								<a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">löschen</a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">abbrechen</button>
+					<button type="button" class="btn btn-sort">speichern</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="innenausstattung" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title text-1er"><i class="fa fa-tags fa-fw"></i> Innenausstattung</h4>
+				</div>
+				<div class="modal-body">
+					<form role="form">
+						<div class="form-group">
+							<label for=""><i class="fa fa-tags fa-fw"></i> Was möchtest du markieren?</label>
+							<input type="text" class="form-control" id="" placeholder="Zierfolie, Sitzbezüge, Pedale, Applikationen etc...">
+						</div>
+						<div class="form-group">
+							<label for=""><i class="fa fa-wrench fa-flip-horizontal fa-fw"></i> Was hast du verändert?</label>
+							<textarea id="innenText" class="form-control" rows="3" style="resize:none" placeholder="Beschreibe hier bitte, was du an deiner Innenausstattung verändert hast. Dazu hast du 255 Zeichen zur Verfügung" maxlength="255"></textarea>
+						</div>
+						<div class="form-group">
+							<label for=""><i class="fa fa-building-o fa-fw"></i> Hersteller</label>
+							<input type="text" class="form-control" id="" placeholder="Name des Herstellers">
+						</div>
+						<div class="form-group">
+							<label for=""><i class="fa fa-shopping-cart fa-fw"></i> Hier erhältlich</label>
+							<input type="url" class="form-control" id="" placeholder="http://www.beispielshop.de/...">
+							<span class="help-block">Kopiere hier den Kauflink hinein.</span>
+						</div>					
+						<div class="fileinput fileinput-new" data-provides="fileinput">
+							<label><i class="fa fa-camera fa-fw"></i> Lade ein Bild hoch</label>
+							<span class="help-block">Bitte verwende ein Bild auf dem besonders gut das Interieur deines Fahrzeugs zu sehen ist :)</span>
+							<div class="fileinput-new thumbnail">
+								<img src="assets/img/placeholder.png" alt="..." title="Dieses Teil wurde verbaut" />
+							</div>
+							<div class="fileinput-preview fileinput-exists thumbnail"></div>
+							<div>
+								<span class="btn btn-sort btn-file">
+									<span class="fileinput-new">Bild wählen</span>
+									<span class="fileinput-exists">ändern</span>
+									<input type="file" name="...">
+								</span>
+								<a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">löschen</a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">abbrechen</button>
+					<button type="button" class="btn btn-sort">speichern</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="karosserie" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title text-1er"><i class="fa fa-tags fa-fw"></i> Karosserie</h4>
+				</div>
+				<div class="modal-body">
+					<form role="form">
+						<div class="form-group">
+							<label for=""><i class="fa fa-tags fa-fw"></i> Was möchtest du markieren?</label>
+							<select class="form-control">
+								<option>Komplettes Bodykit</option>
+								<option>Fahrzeugfront</option>
+								<option>Fahrzeugheck</option>
+								<option>Seitenschweller</option>
+								<option>Spoiler</option>
+								<option>Zierleisten</option>
+								<option>Sonstiges</option>
+							</select>
+						</div>					
+						<div class="form-group">
+							<label for=""><i class="fa fa-building-o fa-fw"></i> Hersteller</label>
+							<input type="text" class="form-control" id="" placeholder="Name des Herstellers">
+						</div>
+						<div class="form-group">
+							<label for=""><i class="fa fa-shopping-cart fa-fw"></i> Hier erhältlich</label>
+							<input type="url" class="form-control" id="" placeholder="http://www.beispielshop.de/...">
+							<span class="help-block">Kopiere hier den Kauflink hinein.</span>
+						</div>					
+						<div class="fileinput fileinput-new" data-provides="fileinput">
+							<label><i class="fa fa-camera fa-fw"></i> Lade ein Bild hoch</label>
+							<span class="help-block">Bitte verwende ein Bild auf dem besonders gut deine Karosserie zu sehen ist :)</span>
+							<div class="fileinput-new thumbnail">
+								<img src="assets/img/placeholder.png" alt="..." title="Dieses Teil wurde verbaut" />
+							</div>
+							<div class="fileinput-preview fileinput-exists thumbnail"></div>
+							<div>
+								<span class="btn btn-sort btn-file">
+									<span class="fileinput-new">Bild wählen</span>
+									<span class="fileinput-exists">ändern</span>
+									<input type="file" name="...">
+								</span>
+								<a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">löschen</a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">abbrechen</button>
+					<button type="button" class="btn btn-sort">speichern</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="lichtanlage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title text-1er"><i class="fa fa-tags fa-fw"></i> Lichtanlage</h4>
+				</div>
+				<div class="modal-body">
+					<form role="form">
+						<div class="form-group">
+							<label for=""><i class="fa fa-tags fa-fw"></i> Was möchtest du markieren?</label>
+							<select class="form-control">
+								<option>Hauptscheinwerfer</option>
+								<option>Heckleuchte</option>
+								<option>Blinker</option>
+								<option>Kennzeichenbeleuchtung</option>
+								<option>Bodenbeleutung</option>
+								<option>Sonstiges</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for=""><i class="fa fa-lightbulb-o fa-fw"></i> Art der Scheinwerfer</label>
+							<select class="form-control">
+								<option>Normal</option>
+								<option>Xenon</option>
+								<option>LED</option>	
+							</select>
+						</div>						
+						<div class="form-group">
+							<label for=""><i class="fa fa-building-o fa-fw"></i> Hersteller</label>
+							<input type="text" class="form-control" id="" placeholder="Name des Herstellers">
+						</div>
+						<div class="form-group">
+							<label for=""><i class="fa fa-shopping-cart fa-fw"></i> Hier erhältlich</label>
+							<input type="url" class="form-control" id="" placeholder="http://www.beispielshop.de/...">
+							<span class="help-block">Kopiere hier den Kauflink hinein.</span>
+						</div>					
+						<div class="fileinput fileinput-new" data-provides="fileinput">
+							<label><i class="fa fa-camera fa-fw"></i> Lade ein Bild hoch</label>
+							<span class="help-block">Bitte verwende ein Bild auf dem besonders gut deine Scheinwerfer zu sehen sind :)</span>
+							<div class="fileinput-new thumbnail">
+								<img src="assets/img/placeholder.png" alt="..." title="Dieses Teil wurde verbaut" />
+							</div>
+							<div class="fileinput-preview fileinput-exists thumbnail"></div>
+							<div>
+								<span class="btn btn-sort btn-file">
+									<span class="fileinput-new">Bild wählen</span>
+									<span class="fileinput-exists">ändern</span>
+									<input type="file" name="...">
+								</span>
+								<a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">löschen</a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">abbrechen</button>
+					<button type="button" class="btn btn-sort">speichern</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="motor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title text-1er"><i class="fa fa-tags fa-fw"></i> Motor</h4>
+				</div>
+				<div class="modal-body">
+					<form role="form">
+						<div class="form-group">
+							<label for=""><i class="fa fa-tags fa-fw"></i> Was möchtest du markieren?</label>
+							<input type="text" class="form-control" id="" placeholder="z.B. Chiptuning">
+						</div>
+						<div class="form-group">
+							<label for=""><i class="fa fa-wrench fa-flip-horizontal fa-fw"></i> Was hast du verändert?</label>
+							<textarea id="textarea" class="form-control" rows="3" style="resize:none" placeholder="Beschreibe hier bitte, was du an deinem Motor verändert hast. Dazu hast du 300 Zeichen zur Verfügung" maxlength="300"></textarea>
+						</div>
+						<div class="form-group">
+							<label for=""><i class="fa fa-building-o fa-fw"></i> Hersteller</label>
+							<input type="text" class="form-control" id="" placeholder="Name des Herstellers">
+						</div>
+						<div class="form-group">
+							<label for=""><i class="fa fa-shopping-cart fa-fw"></i> Hier erhältlich</label>
+							<input type="url" class="form-control" id="" placeholder="http://www.beispielshop.de/...">
+							<span class="help-block">Kopiere hier den Kauflink hinein.</span>
+						</div>					
+						<div class="fileinput fileinput-new" data-provides="fileinput">
+							<label><i class="fa fa-camera fa-fw"></i> Lade ein Bild hoch</label>
+							<span class="help-block">Bitte verwende ein Bild auf dem besonders gut das Interieur deines Fahrzeugs zu sehen ist :)</span>
+							<div class="fileinput-new thumbnail">
+								<img src="assets/img/placeholder.png" alt="..." title="Dieses Teil wurde verbaut" />
+							</div>
+							<div class="fileinput-preview fileinput-exists thumbnail"></div>
+							<div>
+								<span class="btn btn-sort btn-file">
+									<span class="fileinput-new">Bild wählen</span>
+									<span class="fileinput-exists">ändern</span>
+									<input type="file" name="...">
+								</span>
+								<a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">löschen</a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">abbrechen</button>
+					<button type="button" class="btn btn-sort">speichern</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="reifen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title text-1er"><i class="fa fa-tags fa-fw"></i> Reifen & Felgen</h4>
+				</div>			
+				<div class="modal-body">
+					<div class="alert alert-info fade in">
+					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+						<p>Erstelle bitte für deine Reifen und deine Felgen jeweils eine eigene Markierung.</p>
+					</div>
+					<ul class="nav nav-tabs" id="reifenfelgentab">
+						<li class="active" style="width:50%;text-align:center;">
+							<a href="#reifentab" data-toggle="tab" class="tire-tab">Reifen</a>
+						</li>
+						<li  style="width:50%;text-align:center;">
+							<a href="#felgentab" data-toggle="tab" class="tire-tab">Felgen</a>
+						</li>				
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="reifentab">
+							<form role="form">					
+								<div class="form-group">
+									<label for=""><i class="fa fa-expand fa-flip-horizontal fa-fw"></i> Die Maße deiner Reifen</label>
+									<div class="input-group">
+										<input type="text" class="form-control" maxlength="3" placeholder="195">
+										<span class="input-group-addon tiresize">/</span>
+										<input type="text" class="form-control" maxlength="2" placeholder="55">							
+										<span class="input-group-addon tiresize">R</span>
+										<input type="text" class="form-control" maxlength="3" placeholder="16">
+									</div>
+									<span class="help-block">Diese Maße stehen auf deinem Reifen. Sie bestehen aus: Breite<span class="text-1er"> / </span>Höhe <span class="text-1er">R </span>Zoll</span>
+								</div>
+								<div class="form-group">
+									<label for=""><i class="fa fa-road fa-fw"></i> Reifenart</label>
+									<select class="form-control">
+										<option>Sommerreifen</option>
+										<option>Winterreifen</option>
+										<option>Ganzjahresreifen</option>							
+									</select>
+								</div>
+								<div class="form-group">
+									<label for=""><i class="fa fa-building-o fa-fw"></i> Hersteller</label>
+									<input type="text" class="form-control" id="" placeholder="Goodyear, Michelin etc...">
+								</div>
+								<div class="form-group">
+									<label for=""><i class="fa fa-shopping-cart fa-fw"></i> Hier erhältlich</label>
+									<input type="url" class="form-control" id="" placeholder="z.B. http://www.tirendo.de/...">
+									<span class="help-block">Kopiere hier den Kauflink hinein.</span>
+								</div>					
+								<div class="fileinput fileinput-new" data-provides="fileinput">
+									<label><i class="fa fa-camera fa-fw"></i> Lade ein Bild hoch</label>
+									<span class="help-block">Bitte verwende ein Bild auf dem besonders gut deine Reifen zu sehen sind :)</span>
+									<div class="fileinput-new thumbnail">
+										<img src="assets/img/placeholder.png" alt="..." title="Dieses Teil wurde verbaut" />
+									</div>
+									<div class="fileinput-preview fileinput-exists thumbnail"></div>
+									<div>
+										<span class="btn btn-sort btn-file">
+										<span class="fileinput-new">Bild wählen</span>
+										<span class="fileinput-exists">ändern</span>
+										<input type="file" name="...">
+										</span>
+										<a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">löschen</a>
+									</div>
+								</div>					
+							</form>
+						</div>
+						<div class="tab-pane" id="felgentab">
+							<form role="form">					
+								<div class="form-group">
+									<label for=""><i class="fa fa-road fa-fw"></i> Felgenart</label>
+									<select class="form-control">
+										<option>Stahlfelge</option>
+										<option>Alufelge</option>															
+									</select>
+								</div>
+								<div class="form-group">
+									<label for=""><i class="fa fa-expand fa-flip-horizontal fa-fw"></i> Maße deiner Felgen</label>
+									<div class="input-group">
+										<input type="text" class="form-control" maxlength="2" placeholder="z.B. 16">							
+										<span class="input-group-addon tiresize">Zoll</span>
+									</div>
+								</div>							
+								<div class="form-group">
+									<label for=""><i class="fa fa-building-o fa-fw"></i> Hersteller</label>
+									<input type="text" class="form-control" id="" placeholder="OZ, BBS, BMW etc...">
+								</div>
+								<div class="form-group">
+									<label for=""><i class="fa fa-shopping-cart fa-fw"></i> Hier erhältlich</label>
+									<input type="url" class="form-control" id="" placeholder="z.B. http://www.reifen.com/...">
+									<span class="help-block">Kopiere hier den Kauflink hinein.</span>
+								</div>					
+								<div class="fileinput fileinput-new" data-provides="fileinput">
+									<label><i class="fa fa-camera fa-fw"></i> Lade ein Bild hoch</label>
+									<span class="help-block">Bitte verwende ein Bild auf dem besonders gut deine Felgen zu sehen sind :)</span>
+									<div class="fileinput-new thumbnail">
+										<img src="assets/img/placeholder.png" alt="..." title="Dieses Teil wurde verbaut" />
+									</div>
+									<div class="fileinput-preview fileinput-exists thumbnail"></div>
+									<div>
+										<span class="btn btn-sort btn-file">
+										<span class="fileinput-new">Bild wählen</span>
+										<span class="fileinput-exists">ändern</span>
+										<input type="file" name="...">
+										</span>
+										<a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">löschen</a>
+									</div>
+								</div>					
+							</form>
+						</div>
+					</div>				
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">abbrechen</button>
+					<button type="button" class="btn btn-sort">speichern</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="soundanlage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title text-1er"><i class="fa fa-tags fa-fw"></i> Soundanlage</h4>
+				</div>
+				<div class="modal-body">
+					<form role="form">
+						<div class="form-group">
+							<label for=""><i class="fa fa-tags fa-fw"></i> Was möchtest du markieren?</label>
+							<select class="form-control">
+								<option>Komplette Audioanlage</option>
+								<option>Lautsprecher</option>
+								<option>Subwoofer</option>
+								<option>Endstufe</option>
+								<option>Sonstiges</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for=""><i class="fa fa-volume-up fa-fw"></i> Wieviel Watt hat deine Anlage?</label>
+							<div class="input-group">
+								<input type="text" class="form-control" maxlength="4" placeholder="z.B. 500">							
+								<span class="input-group-addon tiresize">Watt</span>
+							</div>
+						</div>					
+						<div class="form-group">
+							<label for=""><i class="fa fa-building-o fa-fw"></i> Hersteller</label>
+							<input type="text" class="form-control" id="" placeholder="Name des Herstellers">
+						</div>
+						<div class="form-group">
+							<label for=""><i class="fa fa-shopping-cart fa-fw"></i> Hier erhältlich</label>
+							<input type="url" class="form-control" id="" placeholder="http://www.beispielshop.de/...">
+							<span class="help-block">Kopiere hier den Kauflink hinein.</span>
+						</div>					
+						<div class="fileinput fileinput-new" data-provides="fileinput">
+							<label><i class="fa fa-camera fa-fw"></i> Lade ein Bild hoch</label>
+							<span class="help-block">Bitte verwende ein Bild auf dem besonders gut die Lautsprecher oder die Endstufe zu sehen sind :)</span>
+							<div class="fileinput-new thumbnail">
+								<img src="assets/img/placeholder.png" alt="..." title="Dieses Teil wurde verbaut" />
+							</div>
+							<div class="fileinput-preview fileinput-exists thumbnail"></div>
+							<div>
+								<span class="btn btn-sort btn-file">
+									<span class="fileinput-new">Bild wählen</span>
+									<span class="fileinput-exists">ändern</span>
+									<input type="file" name="...">
+								</span>
+								<a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">löschen</a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">abbrechen</button>
+					<button type="button" class="btn btn-sort">speichern</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="turbo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title text-1er"><i class="fa fa-tags fa-fw"></i> Turbo</h4>
+				</div>
+				<div class="modal-body">
+					<form role="form">
+						<div class="form-group">
+							<label for=""><i class="fa fa-tags fa-fw"></i> Was möchtest du markieren?</label>
+							<select class="form-control">
+								<option>Turbolader</option>
+								<option>Biturbo</option>							
+							</select>
+						</div>									
+						<div class="form-group">
+							<label for=""><i class="fa fa-building-o fa-fw"></i> Hersteller</label>
+							<input type="text" class="form-control" id="" placeholder="Name des Herstellers">
+						</div>
+						<div class="form-group">
+							<label for=""><i class="fa fa-shopping-cart fa-fw"></i> Hier erhältlich</label>
+							<input type="url" class="form-control" id="" placeholder="http://www.beispielshop.de/...">
+							<span class="help-block">Kopiere hier den Kauflink hinein.</span>
+						</div>					
+						<div class="fileinput fileinput-new" data-provides="fileinput">
+							<label><i class="fa fa-camera fa-fw"></i> Lade ein Bild hoch</label>
+							<span class="help-block">Bitte verwende ein Bild auf dem besonders gut der Turbolader zu sehen ist. Sofern das möglich ist :)</span>
+							<div class="fileinput-new thumbnail">
+								<img src="assets/img/placeholder.png" alt="..." title="Dieses Teil wurde verbaut" />
+							</div>
+							<div class="fileinput-preview fileinput-exists thumbnail"></div>
+							<div>
+								<span class="btn btn-sort btn-file">
+									<span class="fileinput-new">Bild wählen</span>
+									<span class="fileinput-exists">ändern</span>
+									<input type="file" name="...">
+								</span>
+								<a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">löschen</a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">abbrechen</button>
+					<button type="button" class="btn btn-sort">speichern</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="filter" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title text-1er"><i class="fa fa-tags fa-fw"></i> Filter</h4>
+				</div>
+				<div class="modal-body">
+					<form role="form">
+						<div class="form-group">
+							<label for=""><i class="fa fa-tags fa-fw"></i> Was möchtest du markieren?</label>
+							<select class="form-control">
+								<option>Sportluftfilter</option>
+								<option>Ölfilter</option>
+								<option>Kraftstofffilter</option>
+								<option>Innenraumfilter</option>
+								<option>Sonstiges</option>
+							</select>
+						</div>									
+						<div class="form-group">
+							<label for=""><i class="fa fa-building-o fa-fw"></i> Hersteller</label>
+							<input type="text" class="form-control" id="" placeholder="Name des Herstellers">
+						</div>
+						<div class="form-group">
+							<label for=""><i class="fa fa-shopping-cart fa-fw"></i> Hier erhältlich</label>
+							<input type="url" class="form-control" id="" placeholder="http://www.beispielshop.de/...">
+							<span class="help-block">Kopiere hier den Kauflink hinein.</span>
+						</div>					
+						<div class="fileinput fileinput-new" data-provides="fileinput">
+							<label><i class="fa fa-camera fa-fw"></i> Lade ein Bild hoch</label>
+							<span class="help-block">Bitte verwende ein Bild auf dem besonders gut der verbaute Filter zu sehen ist. Sofern das möglich ist :)</span>
+							<div class="fileinput-new thumbnail">
+								<img src="assets/img/placeholder.png" alt="..." title="Dieses Teil wurde verbaut" />
+							</div>
+							<div class="fileinput-preview fileinput-exists thumbnail"></div>
+							<div>
+								<span class="btn btn-sort btn-file">
+									<span class="fileinput-new">Bild wählen</span>
+									<span class="fileinput-exists">ändern</span>
+									<input type="file" name="...">
+								</span>
+								<a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">löschen</a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">abbrechen</button>
+					<button type="button" class="btn btn-sort">speichern</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="zubehoer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title text-1er"><i class="fa fa-tags fa-fw"></i> Zubehör</h4>
+				</div>
+				<div class="modal-body">
+					<form role="form">
+						<div class="alert alert-info">
+							<p>Dein verbautes Teil passt in keine der anderen Kategorien? Dann hast du hier die Möglichkeit es doch noch zu markieren.</p>
+						</div>
+						<div class="form-group">
+							<label for=""><i class="fa fa-tree fa-fw"></i> Was hast du verändert?</label>
+							<textarea id="textarea" class="form-control" rows="3" style="resize:none" placeholder="Beschreibe hier bitte, was du an deinem Fahrzeug verändert hast. Dazu hast du 300 Zeichen zur Verfügung" maxlength="300"></textarea>
+						</div>
+						<div class="form-group">
+							<label for=""><i class="fa fa-building-o fa-fw"></i> Hersteller</label>
+							<input type="text" class="form-control" id="" placeholder="Name des Herstellers">
+						</div>
+						<div class="form-group">
+							<label for=""><i class="fa fa-shopping-cart fa-fw"></i> Hier erhältlich</label>
+							<input type="url" class="form-control" id="" placeholder="http://www.beispielshop.de/...">
+							<span class="help-block">Kopiere hier den Kauflink hinein.</span>
+						</div>					
+						<div class="fileinput fileinput-new" data-provides="fileinput">
+							<label><i class="fa fa-camera fa-fw"></i> Lade ein Bild hoch</label>
+							<span class="help-block">Bitte verwende ein Bild auf dem besonders gut das verbaute Teil gut zu sehen ist :)</span>
+							<div class="fileinput-new thumbnail">
+								<img src="assets/img/placeholder.png" alt="..." title="Dieses Teil wurde verbaut" />
+							</div>
+							<div class="fileinput-preview fileinput-exists thumbnail"></div>
+							<div>
+								<span class="btn btn-sort btn-file">
+									<span class="fileinput-new">Bild wählen</span>
+									<span class="fileinput-exists">ändern</span>
+									<input type="file" name="...">
+								</span>
+								<a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">löschen</a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">abbrechen</button>
+					<button type="button" class="btn btn-sort">speichern</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal fade" id="priceskills" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title text-1er"><i class="fa fa-tags fa-fw"></i> Preis & Schwieringkeitgrad</h4>
+				</div>
+				<div class="modal-body">
+					<form role="form">
+						<div class="form-group">
+							<label for=""><i class="fa fa-credit-card fa-fw"></i> Wieviel kostet dieses Teil?</label>
+							<div class="input-group">
+								<input type="text" class="form-control" id=""  data-mask="99999" maxlength="5" placeholder="z.B. 50" />
+								<span class="input-group-addon"><i class="fa fa-euro fa-fw"></i></span>
+							</div>
+							<span class="help-block">Bitte kein Komma und Centbetrag eintragen. Runde einfach auf :)</span>
+						</div>
+						<div class="input-group">
+							<label for=""><i class="fa fa-flask fa-fw"></i> Schwierigkeit</label>
+						</div>
+						<div class="rating-wrapper">	
+							<div class="input-group">
+								<fieldset class="rating">						
+									<input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="nur vom Profi"><i class="fa fa-wrench"></i></label>
+									<input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="schwer"><i class="fa fa-wrench"></i></label>
+									<input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="mittel"><i class="fa fa-wrench"></i></label>
+									<input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="leicht"><i class="fa fa-wrench"></i></label>
+									<input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="sehr leichr"><i class="fa fa-wrench"></i></label>
+								</fieldset>
+							</div>
+						</div>
+						<span class="help-block">Die Skala reicht von 1 <i class="fa fa-wrench"></i> (leicht) bis 5 <i class="fa fa-wrench"></i> (nur vom Profi).</span>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">abbrechen</button>
+					<button type="button" class="btn btn-sort">speichern</button>
+				</div>
+			</div>
+		</div>
+	</div>	
+</body>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/holder.js"></script>
+<script src="assets/js/application.js"></script>
+<script src="assets/js/jasny-bootstrap.min.js"></script>
+
+
+
+</body>
+</html>
